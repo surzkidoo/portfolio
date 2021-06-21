@@ -1,0 +1,360 @@
+:root{
+    --primary:rgb(7, 235, 83);
+}
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.container-toggler{
+    bottom: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transform: translate(-0%,-19%);
+    display: none;
+    margin-top: 20px;
+    font-size: 90px;
+    transform: scale(1.2);
+    text-align: center;
+    display: none;
+    
+}
+.toggler{
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(19, 17, 17, 0.911);
+    position: absolute;
+    margin-top: 45%;
+}
+.t-1{
+    top: 2px;
+    transform: rotate(30deg);
+}
+
+.t-3{
+    top: 2px;
+    transform: rotate(150deg);
+}
+.container-toggler{
+   
+    position: absolute;
+}
+
+header{
+    background-image:url(backg.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.hd{
+ font-size:40px;
+ position: relative;
+ animation-name: slide;
+ animation-duration: 5s; 
+}
+.label2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    animation-name: slide;
+    animation-duration: .5s;
+    animation-delay: 0s;
+    
+}
+.img{
+    border-radius: 50%;
+    border:5px solid rgb(7, 235, 83);
+     
+}
+.btn{
+ border-width: 10px;
+}
+.menu-con{
+    border-bottom: 1px solid rgb(7, 235, 83);
+}
+.menu{
+    list-style-type: none;
+   
+}
+.menu li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.menu a:hover{
+    color: var(--primary);
+}
+.social-media{
+    list-style-type: none;
+    color: rgb(7, 235, 83);
+}
+.social-media span{
+    color: rgb(7, 235, 83);
+    line-height: 40px;
+}
+.project-list{
+    border-left: 5px solid rgb(7, 235, 83);
+}
+.skill-header{
+  background-color:rgb(0, 0, 0);
+}
+.space{
+    background-color: silver;
+    height: 10px;
+    padding: 0px;
+}
+.value{
+    background-color:  rgb(7, 235, 83);
+    width: 20%;
+    height: 10px;
+    position: relative;
+    left: 0px;
+}
+.per{
+    width: 20%;
+    height: 10px;
+    position: absolute;
+    left: 20%;
+}
+.tt{
+    font-family: cursive;
+}
+.cc{
+    position: relative;
+    top:-50px;
+    z-index: 33;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.itm-cc{
+    color: black;
+    border:2px ridge rgb(7, 235, 83);
+}
+#rad{
+    width: 50px;
+    height: 50px;
+    display: none;
+    position: relative;
+    z-index: 66;
+    opacity: 0;
+}
+#rad:checked ~ .menu {
+    display:block;
+}
+input[type="text"]{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(128, 131, 126);
+    font-size: 14px;
+    color: rgba(12, 12, 12, 0.521);
+   
+}
+input:focus , textarea:focus {
+    outline: none;
+    border: 3px solid  rgb(7, 235, 83);
+}
+
+.submit{
+    width: 80px;
+    height: 55px;
+    outline: none;
+    border: none;
+    border-radius:30px ;
+    background-color: rgb(7, 235, 83);
+}
+label{
+    font-weight:200;
+    color: rgba(27, 26, 26, 0.877);
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.next{
+    background-color: rgb(231, 226, 226);
+    width: 70PX;
+    height: 70PX;
+    border-radius: 50%;
+    border: 2px solid  rgb(7, 235, 83);
+}
+
+textarea{
+    border-radius: 5px;
+    border: 1px solid rgb(128, 131, 126);
+    font-size: 18px;
+    color: rgb(86, 90, 83);
+}
+.proimg {
+
+    transition-duration: 5s;
+    transition: all;
+    transition-timing-function: ease-in;
+
+    
+}
+
+.container-project{
+    position: relative;
+    width: 100%;
+}
+.slideup{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    background-color: rgba(3, 3, 3, 0.644);
+    transition: all .2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.container-project:hover .slideup{
+    height: 100%;
+}
+.slideup:hover .btn-view{
+    width: 100px;
+    height: 40px;
+}
+
+.btn-view{
+    background-color: rgb(7, 235, 83);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    width: 0px;
+    height: 0px;
+    transition: all .2s ease;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.btn-view:hover{
+    background-color: white;
+    color:rgb(7, 235, 83); 
+}
+
+.skill-con{
+    width: 0;
+    
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.container-project:hover .skill-con{
+    width: 60%;
+    transition-delay: .0s;
+    transition-duration: .4s;
+}
+.tag{
+background-color: rgb(19, 18, 18);
+color: rgb(211, 209, 209);
+border-radius: 6px;
+}
+
+.intro{
+    filter: blur(px);
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.897);
+   
+}
+.fa-heart{
+    font-size: 22px;
+    color: red;
+}
+
+.form-container{
+    padding:10px;
+    width: 100%;
+    background: linear-gradient(180deg,rgb(7, 235, 83)  , rgba(118, 167, 38, 0.884) );
+}
+
+.footer a span{
+    font-size: 25px;
+    margin: 5px;
+    color: linear-gradient(180deg,rgb(7, 235, 83)  , rgba(118, 167, 38, 0.884) );
+}
+
+@media screen and (max-width:767px){
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .container-toggler{
+        display: block;
+        
+    }
+    .proimg{
+        height: 200px;
+    }
+    .hd{
+        font-size: 45px;
+    }
+    .cc{
+       top:-50px;
+    }
+    .itm-cc{
+        margin-bottom: 10px;
+    }
+    .bug{
+        margin-right:0px !important;
+    }
+    .tt{
+        font-size: 100%;
+    }
+    #rad{
+        display: block;
+    }
+    .menu-rad{
+       position: relative;
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        background-color: rgba(0,0,0,0.4);
+        z-index: 99;
+        padding: 0px;
+        margin: 0px;
+        width: 150px;
+        right: 0px;
+    }
+    .menu li{
+        display:block;
+        text-align: center;
+     
+        
+    }
+    .menu li:hover{
+       background-color: var(--primary);
+       color: white;
+    }
+    
+  
+    
+}
+
+
+@keyframes slide{
+    0%{
+        left:-100%;
+        
+    }
+    100%{
+        left: 0%;
+    }
+}
